@@ -10,3 +10,5 @@
 1. Clone the repo in $HOME/dotfiles
 2. `cd $HOME/dotfiles`
 3. `stow zsh`
+4. `stow git`
+
