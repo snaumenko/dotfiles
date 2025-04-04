@@ -85,7 +85,7 @@
   "diffEditor.hideDeleted": true,
   "cursor.aipreview.enabled": true,
   "workbench.preferredHighContrastLightColorTheme": "Visual Studio Light",
-  "window.zoomLevel": 2,
   "search.showLineNumbers": true,
-  "workbench.settings.applyToAllProfiles": []
+  "workbench.settings.applyToAllProfiles": [],
+  "window.zoomLevel": -1
 }
