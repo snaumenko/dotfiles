@@ -1,8 +1,8 @@
 plugins=(git)
 source $HOME/.oh-my-zsh/oh-my-zsh.sh
-source $HOME/.config/zsh/custom/theme.sh
-source $HOME/.config/zsh/custom/aliases.sh
-source $HOME/.config/zsh/custom/functions.sh
+source $HOME/.zsh/theme.sh
+source $HOME/.zsh/aliases.sh
+source $HOME/.zsh/functions.sh
 
 # setup history
 export HISTFILESIZE=10000
@@ -54,21 +54,12 @@ zle -N zle-line-init
 echo -ne '\e[5 q' # Use beam shape cursor on startup.
 preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
-if [ -f /usr/local/etc/profile.d/autojump.sh ];
-then
-  . /usr/local/etc/profile.d/autojump.sh
-elif [ -f /usr/share/autojump/autojump.sh ];
-then
-  . /usr/share/autojump/autojump.sh
-fi
-
+# Setup nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# For Mac only
-export PATH="$HOME/.deno/bin:$PATH"
-source <(wmill completions zsh)
-export PATH="/usr/local/opt/mysql@8.0/bin:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
 
-[ -f "/Users/sergii/.ghcup/env" ] && . "/Users/sergii/.ghcup/env" # ghcup-env
+# Setup autojump
+[[ -s $(brew --prefix autojump)/share/autojump/autojump.zsh ]] && source $(brew --prefix autojump)/share/autojump/autojump.zsh
