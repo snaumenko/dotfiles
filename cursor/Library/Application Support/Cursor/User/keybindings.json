@@ -1,0 +1,222 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "ctrl+shift+p",
+    "command": "workbench.action.showAllEditorsByMostRecentlyUsed"
+  },
+  {
+    "key": "cmd+/",
+    "command": "runCommands",
+    "args": {
+      "commands": ["editor.action.commentLine", "cursorDown"]
+    },
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+cmd+n",
+    "command": "workbench.action.files.newUntitledFile"
+  },
+  {
+    "key": "cmd+n",
+    "command": "-workbench.action.files.newUntitledFile"
+  },
+  {
+    "key": "cmd+n",
+    "command": "explorer.newFile"
+  },
+  {
+    "key": "cmd+s",
+    "command": "workbench.action.files.saveFiles"
+  },
+  {
+    "key": "cmd+f4",
+    "command": "bookmarks.listFromAllFiles"
+  },
+  {
+    "key": "alt+k",
+    "command": "bookmarks.jumpToPrevious",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+j",
+    "command": "bookmarks.jumpToNext",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+cmd+j",
+    "command": "bookmarks.toggle"
+  },
+  {
+    "key": "ctrl+cmd+j",
+    "command": "-workbench.action.togglePanel"
+  },
+  {
+    "key": "f4",
+    "command": "bookmarksExplorer.focus"
+  },
+  {
+    "key": "shift+cmd+w",
+    "command": "-workbench.action.closeWindow"
+  },
+  {
+    "key": "cmd+w",
+    "command": "-workbench.action.closeWindow",
+    "when": "!editorIsOpen && !multipleEditorGroups"
+  },
+  {
+    "key": "ctrl+f12",
+    "command": "typescript.findAllFileReferences"
+  },
+  {
+    "key": "F2",
+    "command": "renameFile",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+  {
+    "key": "enter",
+    "command": "-renameFile",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+  {
+    "key": "enter",
+    "command": "list.select",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "alt+up",
+    "command": "-editor.action.moveLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+up",
+    "command": "-notebook.cell.moveUp",
+    "when": "notebookEditorFocused && !inputFocus"
+  },
+  {
+    "key": "alt+up",
+    "command": "editor.action.addSelectionToNextFindMatch",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+d",
+    "command": "-editor.action.addSelectionToNextFindMatch",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+shift+cmd+e",
+    "command": "aichat.show-ai-chat"
+  },
+  {
+    "key": "ctrl+alt+i",
+    "command": "editor.action.showSnippets"
+  },
+  {
+    "key": "alt+n",
+    "command": "workbench.action.newWindow"
+  },
+  {
+    "key": "shift+cmd+n",
+    "command": "-workbench.action.newWindow"
+  },
+  {
+    "key": "shift+cmd+n",
+    "command": "explorer.newFolder"
+  },
+  {
+    "key": "cmd+q",
+    "command": "-workbench.action.quit"
+  },
+  {
+    "key": "ctrl+shift+j",
+    "command": "workbench.action.togglePanel"
+  },
+  {
+    "key": "cmd+j",
+    "command": "-workbench.action.togglePanel"
+  },
+  {
+    "key": "alt+b",
+    "command": "-gitlens.toggleFileBlame",
+    "when": "editorTextFocus && config.gitlens.keymap == 'alternate' && resource in 'gitlens:tabs:blameable'"
+  },
+  {
+    "key": "alt+cmd+g b",
+    "command": "-gitlens.toggleFileBlame",
+    "when": "editorTextFocus && config.gitlens.keymap == 'chorded' && resource in 'gitlens:tabs:blameable'"
+  },
+  {
+    "key": "ctrl+f1",
+    "command": "gitlens.toggleFileBlame"
+  },
+  {
+    "key": "ctrl+shift+f1",
+    "command": "gitlens.toggleLineBlame"
+  },
+  {
+    "key": "cmd+0",
+    "command": "workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
+  },
+  {
+    "key": "shift+cmd+e",
+    "command": "-workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
+  },
+  {
+    "key": "shift+cmd+f4",
+    "command": "git.closeAllDiffEditors"
+  },
+  {
+    "key": "cmd+0",
+    "command": "-workbench.action.focusSideBar"
+  },
+  {
+    "key": "cmd+f1",
+    "command": "workbench.action.showCommands"
+  },
+  {
+    "key": "f1",
+    "command": "-workbench.action.showCommands"
+  },
+  {
+    "key": "f1",
+    "command": "workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
+  },
+  {
+    "key": "ctrl+cmd+h",
+    "command": "workbench.action.navigateLeft"
+  },
+  {
+    "key": "ctrl+cmd+l",
+    "command": "workbench.action.navigateRight"
+  },
+  {
+    "key": "ctrl+cmd+j",
+    "command": "workbench.action.navigateDown"
+  },
+  {
+    "key": "ctrl+cmd+k",
+    "command": "workbench.action.navigateUp"
+  },
+  {
+    "key": "alt+-",
+    "command": "editor.fold",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "alt+=",
+    "command": "editor.unfold",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "shift+alt+-",
+    "command": "editor.foldAll",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "shift+alt+=",
+    "command": "editor.unfoldAll",
+    "when": "editorTextFocus && foldingEnabled"
+  }
+]

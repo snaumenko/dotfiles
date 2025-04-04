@@ -1,0 +1,91 @@
+{
+  "window.commandCenter": 1,
+  "workbench.editor.enablePreview": false,
+  "workbench.colorTheme": "Visual Studio Light",
+  "vim.visualModeKeyBindingsNonRecursive": [],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>",
+        "l"
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        ";"
+      ],
+      "after": [
+        ":"
+      ]
+    },
+    {
+      "before": [
+        "j"
+      ],
+      "after": [
+        "g",
+        "j"
+      ]
+    },
+    {
+      "before": [
+        "k"
+      ],
+      "after": [
+        "g",
+        "k"
+      ]
+    }
+  ],
+  "vim.relativenumber": true,
+  "editor.lineNumbers": "relative",
+  "editor.formatOnSave": true,
+  "prettier.documentSelectors": [
+    "**/*.{ts,js}"
+  ],
+  "notebook.formatOnSave.enabled": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.fontLigatures": false,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "diffEditor.ignoreTrimWhitespace": true,
+  "git.autofetch": true,
+  "workbench.tree.indent": 8,
+  "workbench.editor.editorActionsLocation": "titleBar",
+  "workbench.editor.closeEmptyGroups": false,
+  "search.mode": "newEditor",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "haskell.manageHLS": "GHCup",
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.quickSuggestionsDelay": 2500,
+  "editor.snippetSuggestions": "top",
+  "git.showPushSuccessNotification": true,
+  "git.replaceTagsWhenPull": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.foldingStrategy": "indentation",
+  "window.zoomPerWindow": false,
+  "workbench.sideBar.location": "right",
+  "editor.fontSize": 13,
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "diffEditor.hideDeleted": true,
+  "cursor.aipreview.enabled": true,
+  "workbench.preferredHighContrastLightColorTheme": "Visual Studio Light",
+  "window.zoomLevel": 2,
+  "search.showLineNumbers": true,
+  "workbench.settings.applyToAllProfiles": []
+}
