@@ -1,0 +1,33 @@
+[user]
+	name = snaumenko
+	email = smnaumenko@gmail.com
+[log]
+	decorate = full
+[color]
+	ui = true
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
+	undo = reset HEAD~
+	lp = log --pretty=format:'%C(green)%h%Creset %C(blue)@%an%Creset %C(white)%s%Creset'
+	df = diff
+	dfs = diff --staged
+[merge]
+	defaultToUpstream = true
+[push]
+	default = simple
+[core]
+	autocrlf = input
+	editor = vim
+	excludesfile = /Users/sergii/.gitignore_global
+[cola]
+	fontdiff = Monospace,16,-1,0,50,0,0,0,0,0
+	tabwidth = 4
+	spellcheck = false
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
